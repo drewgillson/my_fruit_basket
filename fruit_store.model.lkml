@@ -15,6 +15,7 @@ test: check_fruit {
 }
 
 explore: performance {
+  label: "Deep Dive"
   view_name: fruit
   extends: [fruit]
   hidden: no
