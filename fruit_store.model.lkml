@@ -14,6 +14,7 @@ test: check_fruit {
 }
 
 explore: performance {
+  label: "Store Performance"
   view_name: fruit
   extends: [fruit]
   hidden: no
