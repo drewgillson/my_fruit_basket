@@ -18,7 +18,8 @@ def main():
     branch = sys.argv[1].replace("refs/heads/","")
     print(branch)
     print(sys.argv[2])
-    resp = sdk.update_git_branch(project_id=sys.argv[2], body=models.WriteGitBranch(name=branch))
+    branchObj = models.WriteGitBranch(name=branch)
+    resp = sdk.update_git_branch(project_id=sys.argv[2], body=branchObj)
     broken_content_dev = sdk.content_validation().content_with_errors
 
     # Assert no new errors introduced in dev branch
