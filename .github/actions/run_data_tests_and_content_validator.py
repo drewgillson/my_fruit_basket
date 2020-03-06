@@ -8,6 +8,8 @@ sdk = client.setup()
 def main():
     broken_content_prod = sdk.content_validation().content_with_errors
     
+    print(sys)
+    
     """Enter dev mode """
     sdk.update_session(models.WriteApiSession(workspace_id='dev'))
     
