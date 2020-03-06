@@ -1,15 +1,13 @@
-from looker_sdk import client, models
+import looker_sdk
 import sys
 import fileinput
 from datetime import datetime
 
-sdk = client.setup()
+sdk = looker_sdk.init31()
 
 def main():
     broken_content_prod = sdk.content_validation().content_with_errors
-    
-    print(sys)
-    
+        
     """Enter dev mode """
     sdk.update_session(models.WriteApiSession(workspace_id='dev'))
     
