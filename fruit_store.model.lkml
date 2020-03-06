@@ -1,7 +1,6 @@
 connection: "internal"
 include: "//looker_fruit_basket/*.explore.lkml"
 
-
 test: check_fruit {
   explore_source: fruit_ext {
     column: name {
