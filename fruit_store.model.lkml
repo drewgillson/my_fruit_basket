@@ -7,6 +7,7 @@ test: check_fruit {
       field: fruit.name
     }
     limit: 1
+
   }
   assert: the_first_fruit_is_an_orange {
     expression: ${fruit.name} = "orange" ;;
