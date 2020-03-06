@@ -19,6 +19,7 @@ def main():
     print(branch)
     print(sys.argv[2])
     branchObj = models.WriteGitBranch(name=branch)
+    print(branchObj)
     resp = sdk.update_git_branch(project_id=sys.argv[2], body=branchObj)
     broken_content_dev = sdk.content_validation().content_with_errors
 
