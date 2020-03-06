@@ -4,6 +4,7 @@ import fileinput
 from datetime import datetime
 
 sdk = looker_sdk.init31()
+print(sdk.me())
 
 def main():
     broken_content_prod = sdk.content_validation().content_with_errors
