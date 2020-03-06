@@ -1,4 +1,5 @@
 import looker_sdk
+from looker_sdk import models
 import sys
 import fileinput
 from datetime import datetime
